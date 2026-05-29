@@ -21,8 +21,8 @@
     }
 
     .card {
-        padding: 40px;
-        border: 2px solid #4caf50;
+    padding: 2.5rem;
+    border: 2px solid #4caf50;
     }
 
 }
