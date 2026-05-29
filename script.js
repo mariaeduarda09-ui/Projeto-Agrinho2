@@ -20,3 +20,16 @@ function exibirMensagemSucesso() {
     alert('Incrível! Você está vendo a lógica separada da estrutura.');
     console.log('Interação realizada com sucesso no projeto Agrinho 2026.');
 }
+
+//VERSÃO 2
+const precoSemente = 150.0;
+
+function calcularInvestimentoTotal(quantidade) {
+    return quantidade * precoSemente;
+}
+
+function atualizarInterface(valorTotal) {
+    const display = document.getElementById("resultadoDisplay");
+    display.innerText = `O investimento total é: R$ ${valorTotal.toFixed(2)}`;
+    display.style.color = valorTotal > 1000 ? "orange" : "green";
+}
