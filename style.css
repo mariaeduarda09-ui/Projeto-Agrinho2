@@ -24,8 +24,30 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+/* Tablets (Telas maiores que 600px) */
 @media screen and (min-width: 600px) {
+    body {
+        background-color: #e3f2fd;
+    }
+
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .card {
-        padding: 2.5rem;
+        flex: 1;
+    }
+}
+
+/* Desktops (Telas maiores que 1024px) */
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: #e8f5e9;
+    }
+
+    .card {
+        padding: 40px;
+        border: 2px solid #4caf50;
     }
 }
